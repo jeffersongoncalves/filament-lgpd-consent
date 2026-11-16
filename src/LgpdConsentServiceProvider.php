@@ -2,17 +2,17 @@
 
 namespace JeffersonGoncalves\Filament\LgpdConsent;
 
+use JeffersonGoncalves\FilamentPluginCore\BasePackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class LgpdConsentServiceProvider extends PackageServiceProvider
+class LgpdConsentServiceProvider extends BasePackageServiceProvider
 {
+    public static string $name = 'filament-lgpd-consent';
+
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-lgpd-consent')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->name(static::$name)
+            ->hasTranslations();
     }
 }
