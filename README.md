@@ -20,7 +20,7 @@ Browse the consent ledger of [laravel-lgpd-consent](https://github.com/jefferson
 - Filters by purpose, terms version, decision (granted or revoked) and visitors.
 - Grants given for an older version of the terms are flagged: they no longer count as consent.
 - Read-only, like the ledger itself: there is no create, edit or delete.
-- English and Brazilian Portuguese.
+- 19 languages.
 
 ## Compatibility
 
